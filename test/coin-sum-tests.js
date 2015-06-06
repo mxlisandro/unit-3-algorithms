@@ -19,7 +19,7 @@ describe('coinSum', function() {
     expect(coinSum(17)).to.eql(28);
   });
 
-  xit('should not take too long', function() {
+  it('should not take too long', function() {
     expect(coinSum(100)).to.eql(2156);
     expect(coinSum(1000)).to.eql(1712051);
     expect(coinSum(10000)).to.eql(1133873304647601);

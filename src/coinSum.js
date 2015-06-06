@@ -24,57 +24,61 @@ makeChange(1) === 1
 makeChange(2) === 2
 */
 
-var results = {};
+function memoize(func) {
+	var results = {};
+	return function() {
+			var args = Array.prototype.slice.call(arguments);
+			if (results[args] == undefined) {
+				results[args] = func.apply(args);
+			}
+			return results[args];
+		}
+}
 
 function coinSum(amt){
+	// var memoized = memoize(partition);
+
+	function partition(amt, coin){
+		if(coin === 0){
+			return 0;
+		}
+		if(amt < 0){
+			return 0;
+		}
+		if(amt <= 1){
+			return 1;
+		}
+		return partition(amt-coin, coin) + partition(amt, maxCoin(amt, coin));
+	}
+
+	function maxCoin(amt, max){
+		if(amt >= 200 && max > 200){
+			return 200;
+		}
+		if(amt >= 100 && max > 100){
+			return 100;
+		}
+		if(amt >= 50 && max > 50){
+			return 50;
+		}
+		if(amt >= 20 && max > 20){
+			return 200;
+		}
+		if(amt >= 10 && max > 10){
+			return 10;
+		}
+		if(amt >= 5 && max > 5){
+			return 5;
+		}
+		if(amt >= 2 && max > 2){
+			return 2;
+		}
+		if(amt >= 1 && max > 1){
+			return 1;
+		}
+		return 0;
+	}
+
 	return partition(amt, maxCoin(amt, 201));
 }
 
-function partition(amt, coin){
-	if(coin === 0){
-		return 0;
-	}
-	if(amt < 0){
-		return 0;
-	}
-	if(amt <= 1){
-		return 1;
-	}
-	return partition(amt-coin, coin) + partition(amt, maxCoin(amt, coin));
-}
-
-function maxCoin(amt, max){
-	if(amt >= 200 && max > 200){
-		return 200;
-	}
-	if(amt >= 100 && max > 100){
-		return 100;
-	}
-	if(amt >= 50 && max > 50){
-		return 50;
-	}
-	if(amt >= 20 && max > 20){
-		return 200;
-	}
-	if(amt >= 10 && max > 10){
-		return 10;
-	}
-	if(amt >= 5 && max > 5){
-		return 5;
-	}
-	if(amt >= 2 && max > 2){
-		return 2;
-	}
-	if(amt >= 1 && max > 1){
-		return 1;
-	}
-	return 0;
-}
-
-
-
-// var results = {};
-// if(!results[amt]){
-// 	resuts[amt] = coinSumHelper(amt);
-// }
-// return results[amt];

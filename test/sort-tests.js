@@ -2,13 +2,24 @@ describe('sort', function() {
   it('should sort numbers', function() {
     for (var i = 0; i < 10; i++) {
       var smallArray = makeList(100);
-      expect(sort(smallArray)).to.eql(smallArray.sort());
+
+      expect(sort(smallArray)).to.eql(smallArray.sort(inc));
+
     }
   });
 
   it('should sort very large arrays', function() {
     var largeArray = makeList(10000);
-    expect(sort(largeArray)).to.eql(largeArray.sort());
+
+    expect(sort(largeArray)).to.eql(largeArray.sort(inc));
+  });
+
+  it('should sort very large array in nlog(n) time', function() {
+    var largeArray = makeList(100000);
+    var start = Date.now();
+    sort(largeArray);
+    var sortTime = Date.now() - start;
+    expect(sortTime).to.be.lessThan(200);
   });
 });
 
@@ -19,4 +30,9 @@ function makeList(num) {
   }
 
   return arr;
+
+}
+
+function inc(a,b) {
+  return a-b;
 }

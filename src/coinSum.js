@@ -25,6 +25,7 @@ makeChange(2) === 2
 */
 
 
+
 function coinSum(amt){
 	var results = {};
 
@@ -34,7 +35,7 @@ function coinSum(amt){
 		if (coin === 0 || amt < 0){
 			results[args] = 0;
 			// return 0;
-		} else if (amt <= 1){
+		} else if (amt === 0){
 			results[args] = 1;
 			// return 1;
 		} else if (results[args] === undefined){
@@ -75,4 +76,5 @@ function coinSum(amt){
 
 	return partition(amt, nextMaxCoin(amt, 201));
 }
+
 

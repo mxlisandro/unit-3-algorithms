@@ -8,6 +8,6 @@ describe('nPaths', function() {
   it('should calculate paths for large board', function() {
     expect(nPaths(4)).to.eql(184);
     expect(nPaths(5)).to.eql(8512);
-    // expect(nPaths(6)).to.eql(1262816);
+    expect(nPaths(6)).to.eql(1262816);
   });
 });

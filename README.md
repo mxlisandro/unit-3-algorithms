@@ -17,7 +17,6 @@ In this challenge, you will be solving the
 
 3. Complete the challenge in located in src/ directory. We recommend completing creating the data structure in the following order (the order they appear in the tests):
 
-- Sort
 - Coin Sum
 - Robot Paths
 

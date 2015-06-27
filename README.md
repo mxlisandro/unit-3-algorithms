@@ -3,6 +3,8 @@
 ##Summary
 In this challenge, you will be solving the
 
+![inline](http://blog.thejsj.com/content/images/2014/12/Big-O-Notation.png)
+
 ##How do I get started?
 1. Fork this repo
   - click on fork button on the top right of the page ![Alt text](http://u.cubeupload.com/azai91/howtofork.png)
@@ -18,7 +20,7 @@ In this challenge, you will be solving the
 3. Complete the challenge in located in src/ directory. We recommend completing creating the data structure in the following order (the order they appear in the tests):
 
 - Coin Sum
-- Robot Paths
+- N-Paths
 
 ##How do I test if my answer is correct?
 * To test your functions, open index.html in your browser

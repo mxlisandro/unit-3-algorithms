@@ -26,28 +26,5 @@ function makeBoard(n) {
 }
 
 function nPaths(size) {
-  var board = makeBoard(size);
-  function path(x, y, n) {
 
-
-    // if invalid move
-    if(x < 0 || x > n || y < 0 || y > n || board.hasBeenVisited(x, y)){
-      return 0;
-    }
-    // if at opposite corner
-    else if(x === n && y === n){
-      return 1;
-
-    } 
-    board.togglePiece(x, y);
-
-    var result = path(x+1, y, n) + path(x, y+1, n) + path(x-1, y, n) + path(x, y-1, n);
-
-
-    board.togglePiece(x, y);
-    return result;
-
-  }
-
-  return path(0, 0, size-1);
 }

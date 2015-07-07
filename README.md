@@ -1,9 +1,34 @@
 #Algorithms
 
 ##Summary
-In this challenge, you will be solving the
-
+### Big-O Notation
 ![inline](http://blog.thejsj.com/content/images/2014/12/Big-O-Notation.png)
+Big-O notation is used to used to compare the efficiency of algorithms and data structures. It
+provides an upper bound on worst-case runtime and an approximation of how things scale.
+In general, we find these approximations by counting operations. Operations such as
+declarations/assignments, comparisons, object accesses, and simple mathematical operations are
+usually generalized to take constant time (aka 1 unit of time).
+
+Since Big-O is used to approximate how algorithms scale when input size grows towards infinity, you
+can get rid of constant factors and additive terms with smaller orders of
+growth. We only want to keep the term that is of the highest order of magnitude because it will
+dominate the function as the problem-size grows.
+
+### Recursion
+When attempting to solve an algorithm, there are generally two routes you can take: the iterative or the
+recursive route. A recursive function is simply a function that calls itself. Instead of using
+a loop to repeat steps and solve the problem iteratively, you can write a recursive function that
+will use itself to break down the problem into smaller parts and piece together the solution.
+
+Remember the 3 crucial parts of a recursive function:
+1. Base Case
+    * handle the simplest input
+2. Recursive Call
+    * call the function on a simpler input
+    * take a "leap of faith"
+        * assume your recursive call with work and use it to solve the bigger problem
+3. Return
+    * return your result so that you have something to use during your leap of faith
 
 ##How do I get started?
 1. Fork this repo
@@ -17,7 +42,7 @@ In this challenge, you will be solving the
   git clone *github url
   ````
 
-3. Complete the challenge in located in src/ directory. We recommend completing creating the data structure in the following order (the order they appear in the tests):
+3. Complete the challenge in located in src/ directory. We recommend completing the algorithms in the following order (the order they appear in the tests):
 
 - Coin Sum
 - N-Paths

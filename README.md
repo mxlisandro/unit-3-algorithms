@@ -79,12 +79,16 @@ element to its correct position.
 ##### Insertion Sort O(n^2)
 ![inline](https://upload.wikimedia.org/wikipedia/commons/9/9c/Insertion-sort-example.gif) <br>
 Like bubble sort, insertion sort also assembles a sorted array one element at a time. It takes the
-next item in the unsorted array and places it in its correct position in the sorted array.
+next item in the unsorted portion of the array and places it in its correct position in the sorted portion of the array.
 
 ##### Mergesort O(nlogn)
 ![inline](https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif) <br>
 Mergesort is a recursive divide-and-conquer algorithm. It recursively splits the array into two
-halves, sorts the halves, and merges them back together.
+halves and merges them back together in sorted order. Since it is done recursively, the array is
+broken down until each element is in its own individual array. Then pairs of these one-element
+arrays are merged so that there is a collection of two-element, sorted arrays. These are then merged
+in pairs and so on, until all the elements have been pieced back together into one fully sorted
+array.
 
 ##How do I get started?
 1. Fork this repo

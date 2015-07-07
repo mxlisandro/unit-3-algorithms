@@ -12,7 +12,7 @@ In general, we find these approximations by counting operations.
 * declarations/assignments (`var num = 0`) 
 * comparisons (`num > 0`) 
 * object accesses (`arr[0]`)
-* simple mathematical operations (+, -, *, /)
+* simple mathematical operations (+, -, &amp;, /)
 
 ##### Examples
 * constant time O(1)
@@ -66,6 +66,25 @@ will use itself to break down the problem into smaller parts and piece together 
         - assume your recursive call with work and use it to solve the bigger problem
 3. Return
     - return your result so that you have something to use during your leap of faith
+
+### Sorting Algorithms
+##### Bubble Sort O(n^2)
+![inline](https://upload.wikimedia.org/wikipedia/commons/0/06/Bubble-sort.gif) <br>
+Bubble sort is terribly inefficient, but it has a cute name and is probably the most intuitive. It
+iterates through the array as many times as needed; it knows to stop once no more changes need to be
+made (aka the array is sorted). At each iteration, it swaps
+neighboring elements if they are out of order, and essentially "bubbles" one (biggest, unsorted)
+element to its correct position.
+
+##### Insertion Sort O(n^2)
+![inline](https://upload.wikimedia.org/wikipedia/commons/9/9c/Insertion-sort-example.gif) <br>
+Like bubble sort, insertion sort also assembles a sorted array one element at a time. It takes the
+next item in the unsorted array and places it in its correct position in the sorted array.
+
+##### Mergesort O(nlogn)
+![inline](https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif) <br>
+Mergesort is a recursive divide-and-conquer algorithm. It recursively splits the array into two
+halves, sorts the halves, and merges them back together.
 
 ##How do I get started?
 1. Fork this repo

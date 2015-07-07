@@ -52,7 +52,7 @@ recursive route. A recursive function is simply a function that calls itself. In
 a loop to repeat steps and solve the problem iteratively, you can write a recursive function that
 will use itself to break down the problem into smaller parts and piece together the solution.
 
-Remember the 3 crucial parts of a recursive function:
+##### Remember the 3 crucial parts of a recursive function:
 1. Base Case
     - handle the simplest input
 2. Recursive Call

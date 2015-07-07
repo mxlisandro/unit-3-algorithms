@@ -3,11 +3,16 @@
 ##Summary
 ### Big-O Notation
 ![inline](http://blog.thejsj.com/content/images/2014/12/Big-O-Notation.png)
+<br>
 Big-O notation is used to used to compare the efficiency of algorithms and data structures. It
 provides an upper bound on worst-case runtime and an approximation of how things scale.
-In general, we find these approximations by counting operations. Operations such as
-declarations/assignments, comparisons, object accesses, and simple mathematical operations are
-usually generalized to take constant time (aka 1 unit of time).
+In general, we find these approximations by counting operations. 
+
+##### Constant time operations (aka O(1), 1 unit of time)
+* declarations/assignments (`var num = 0`) 
+* comparisons (`num > 0`) 
+* object accesses (`arr[0]`)
+* simple mathematical operations (+, -, *, /)
 
 ##### Examples
 * constant time O(1)

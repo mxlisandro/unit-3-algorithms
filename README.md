@@ -54,13 +54,13 @@ will use itself to break down the problem into smaller parts and piece together 
 
 Remember the 3 crucial parts of a recursive function:
 1. Base Case
-    * handle the simplest input
+    - handle the simplest input
 2. Recursive Call
-    * call the function on a simpler input
-    * take a "leap of faith"
-        * assume your recursive call with work and use it to solve the bigger problem
+    - call the function on a simpler input
+    - take a "leap of faith"
+        - assume your recursive call with work and use it to solve the bigger problem
 3. Return
-    * return your result so that you have something to use during your leap of faith
+    - return your result so that you have something to use during your leap of faith
 
 ##How do I get started?
 1. Fork this repo

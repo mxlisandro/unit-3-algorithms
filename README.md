@@ -9,10 +9,42 @@ In general, we find these approximations by counting operations. Operations such
 declarations/assignments, comparisons, object accesses, and simple mathematical operations are
 usually generalized to take constant time (aka 1 unit of time).
 
-Since Big-O is used to approximate how algorithms scale when input size grows towards infinity, you
+##### Examples
+* constant time O(1)
+```
+var num = 0;
+function increment() {
+    num = num + 1;
+}
+```
+* linear time O(n), where n is the length of the array
+```
+var arr = [0, 1, 2, 3];
+function increment(arr) {
+    for (var i = 0; i < arr.length; i++) {
+        arr[i] = arr[i] + 1;
+    }
+}
+```
+* quadratic time O(n^2), where n is the length of the array
+```
+var arr = [0, 1, 2, 3];
+function sums(arr) {
+    var results = [];
+    for (var i = 0; i < arr.length; i++) {
+        for (var j = 0; j < arr.length; j++) {
+            results.push(arr[i] + arr[j]);
+        }
+    }
+}
+```
+
+Big-O is used to approximate how algorithms scale when input-size (array length, number of items in
+an object, string length, or whatever) grows towards infinity, so you
 can get rid of constant factors and additive terms with smaller orders of
-growth. We only want to keep the term that is of the highest order of magnitude because it will
-dominate the function as the problem-size grows.
+growth. We only want to keep the term that will
+dominate the function as input-size grows. For example, we say 5n + 2 is in O(n) because the
+coefficient and constant become negligible when n is large.
 
 ### Recursion
 When attempting to solve an algorithm, there are generally two routes you can take: the iterative or the

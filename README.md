@@ -91,18 +91,9 @@ in pairs and so on, until all the elements have been pieced back together into o
 array.
 
 ##How do I get started?
-1. Fork this repo
-  - click on fork button on the top right of the page ![Alt text](http://u.cubeupload.com/azai91/howtofork.png)
-  - click on your handle to fork to your repo
+1. Complete the challenge in located in ```part1/main.js``` directory. We recommend completing the algorithms in the following order (the order they appear in the tests):
 
-2. Clone the repo
-  - copy and paste github url from the right side of the ![Alt text](http://u.cubeupload.com/azai91/howtoclone.png)
-  - type in the following line into your command line and insert your copies url as shown below:
-  ````
-  git clone *github url
-  ````
-
-3. Complete the challenge in located in src/ directory. We recommend completing the algorithms in the following order (the order they appear in the tests):
+1. After completing part1, there are complete the following algorithms in ```part2/```
 
 - Coin Sum
 - N-Paths

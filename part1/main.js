@@ -47,17 +47,16 @@ function functionBind(func, context) {
  * [['rock','rock'],['rock','paper'],['rock','scissors'],
  * ['paper','paper'],['paper','scissors'],['paper','rock'],
  * ['scissors','scissors'],['scissors','paper'],['scissors','rock']]
- * 
  */
-function rockPaperScissors(num) {
+function rockPaperScissors(array) {
     
 }
 
-function insertionSort(num) {
+function insertionSort(array) {
 }
 
-function bubbleSort(num) {
+function bubbleSort(array) {
 }
 
-function mergeSort(num) {
+function mergeSort(array) {
 }

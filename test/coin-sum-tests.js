@@ -1,4 +1,5 @@
 describe('coinSum', function() {
+
   it('should calculate coin sum for small amounts', function() {
     expect(coinSum(1)).to.eql(1);
     expect(coinSum(2)).to.eql(2);
@@ -8,6 +9,7 @@ describe('coinSum', function() {
     expect(coinSum(6)).to.eql(5);
     expect(coinSum(7)).to.eql(6);
     expect(coinSum(8)).to.eql(7);
+
   });
 
   it('should calculate coin sum for moderate amounts', function() {
@@ -21,6 +23,7 @@ describe('coinSum', function() {
     expect(coinSum(16)).to.eql(25);
     expect(coinSum(17)).to.eql(28);
   });
+
 
   xit('should calculate coin sum for large amounts', function() {
     expect(coinSum(100)).to.eql(4563);

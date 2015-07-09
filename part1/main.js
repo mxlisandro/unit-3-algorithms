@@ -48,7 +48,7 @@ function functionBind(func, context) {
  * ['paper','paper'],['paper','scissors'],['paper','rock'],
  * ['scissors','scissors'],['scissors','paper'],['scissors','rock']]
  */
-function rockPaperScissors(array) {
+function rockPaperScissors(num) {
     
 }
 

@@ -2,13 +2,15 @@ describe('insertionSort', function() {
   it('should sort numbers', function() {
     for (var i = 0; i < 10; i++) {
       var smallArray = makeList(100);
-      expect(insertionSort(smallArray)).to.eql(smallArray.sort(inc));
+      var clone = smallArray.slice();
+      expect(insertionSort(clone)).to.eql(smallArray.sort(inc));
     }
   });
 
   it('should sort very large arrays', function() {
     var largeArray = makeList(10000);
-    expect(insertionSort(largeArray)).to.eql(largeArray.sort(inc));
+    var clone = largeArray.slice();
+    expect(insertionSort(clone)).to.eql(largeArray.sort(inc));
   });
 
 });

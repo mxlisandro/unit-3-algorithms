@@ -1,7 +1,14 @@
 // returns true if string is a palindrome (the string is the same forward and backwards). The parameters entered may have puncutations and symbols, but they should not affect whether the string is a palindrome
 // ex: palindrome("Anne, I vote more cars race Rome-to-Vienna"); -> true
 function palindrome(string) {
-
+    string = string.split(" ").join("");
+    string.toLowerCase();
+    for (var i = 0; i < Math.floor(string.length/2); i++) {
+        if (string[i] !== string[string.length-i-1]) {
+            return false;
+        }
+    }
+    return true;
 }
 
 // returns true is the input is prime.

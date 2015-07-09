@@ -1,7 +1,9 @@
 describe('functionBind', function() {
+    var matt;
+    var bob;
   beforeEach(function() {
-    var matt = {name: "matt", shout: function() {return this.name;}};
-    var bob = {name: "bob"};
+    matt = {name: "matt", shout: function() {return this.name;}};
+    bob = {name: "bob"};
   });
   it('should use the context it is bound to', function() {
     var boundShout = functionBind(matt.shout, matt);

@@ -2,16 +2,15 @@ describe('bubbleSort', function() {
   it('should sort numbers', function() {
     for (var i = 0; i < 10; i++) {
       var smallArray = makeList(100);
-
-      expect(bubbleSort(smallArray)).to.eql(smallArray.sort(inc));
-
+      var clone = smallArray.slice();
+      expect(bubbleSort(clone)).to.eql(smallArray.sort(inc));
     }
   });
 
   it('should sort very large arrays', function() {
     var largeArray = makeList(10000);
-
-    expect(bubbleSort(largeArray)).to.eql(largeArray.sort(inc));
+    var clone = largeArray.slice();
+    expect(bubbleSort(clone)).to.eql(largeArray.sort(inc));
   });
 
 });

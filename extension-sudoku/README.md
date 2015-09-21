@@ -39,4 +39,4 @@ Here is the first puzzle represented as a board:
 
 These are ordered by difficulty in ascending order. For example, every square in the first four puzzles can eventually be solved by checking all the numbers in the same row, column, and section and eliminating all but one of the possibilities. Later ones will need more sophisticated logic. Eventually making guesses will be necessary. Try to solve as many as you can. 
 
-You should spend a lot of time crafting your algorithm and pseudo-coding your solution first. What will your approach be? Functional of object-oriented programming?
+You should spend a lot of time crafting your algorithm and pseudo-coding your solution first. What will your approach be? Functional of object-oriented programming? Additional puzzles have been provided in the `.txt` files.

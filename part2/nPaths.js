@@ -6,7 +6,7 @@
  *
  */
 
-// A Board class might be useful be useful
+// A Board class might be useful
 
 function makeBoard(n) {
   var board = [];

@@ -91,15 +91,12 @@ in pairs and so on, until all the elements have been pieced back together into o
 array.
 
 ##How do I get started?
-1. Complete the challenge in located in ```part1/main.js``` directory. We recommend completing the algorithms in the following order (the order they appear in the tests):
+1. Complete the challenge in located in ```part1/main.js``` directory. We recommend completing the algorithms in the order they appear in the tests. 
 
-1. After completing part1, there are complete the following algorithms in ```part2/```
-
-- Coin Sum
-- N-Paths
+1. After completing part1, move on to ```part2/``` where you'll find Coin Sum and N-Paths. Complete these problems in whichever order you prefer.
 
 ##How do I test if my answer is correct?
-* To test your functions, open index.html in your browser
+* To test your functions, open index.html in your browser.
 ** NOTE: While completing the challenges, if all tests that previously passed ALL suddenly fail, there is most likely a syntax error in your code. Open Chrome Dev Tool's to locate the cause of the error.
 
 

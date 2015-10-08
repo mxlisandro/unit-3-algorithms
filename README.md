@@ -2,7 +2,7 @@
 
 ##Summary
 ### Big-O Notation
-![inline](http://blog.thejsj.com/content/images/2014/12/Big-O-Notation.png)
+![inline](https://nsscreencast.s3.amazonaws.com/072-objective-c-collections/bigonotation.jpg)
 <br>
 Big-O notation is used to used to compare the efficiency of algorithms and data structures. It
 provides an upper bound on worst-case runtime and an approximation of how things scale.

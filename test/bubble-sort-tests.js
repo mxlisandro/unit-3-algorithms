@@ -13,6 +13,15 @@ describe('bubbleSort', function() {
     expect(bubbleSort(clone)).to.eql(largeArray.sort(inc));
   });
 
+  xit('should handle a very, very large but already sorted arrays', function() {
+    var ultraArray = [];
+    for (var i = 0; i < 10000000; i++) {
+      ultraArray.push(i);
+    }
+    bubbleSort(arr);
+    expect(arr[2000]).to.eql(2000);
+  });
+
 });
 
 function makeList(num) {

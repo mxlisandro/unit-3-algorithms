@@ -16,14 +16,14 @@ In general, we find these approximations by counting operations.
 
 ##### Examples
 * constant time O(1)
-```
+```javascript
 var num = 0;
 function increment() {
     num = num + 1;
 }
 ```
 * linear time O(n), where n is the length of the array
-```
+```javascript
 var arr = [0, 1, 2, 3];
 function increment(arr) {
     for (var i = 0; i < arr.length; i++) {
@@ -32,7 +32,7 @@ function increment(arr) {
 }
 ```
 * quadratic time O(n^2), where n is the length of the array
-```
+```javascript
 var arr = [0, 1, 2, 3];
 function sums(arr) {
     var results = [];
@@ -115,16 +115,12 @@ array.
 4. Each partner add two remote links to their clone on their own laptop, one to CodesmithLLC's repo, and one to their partner's repo, following the instructions in step 3
 5. As you work on the shared workstation, periodically push your changes to your repo with `git push origin master`. Your partner can then use `git pull partner master` to get the changes onto their machine, followed by `git push origin master` to push those changes to their own GitHub repo!
 
-1. Complete the challenge in located in ```part1/main.js``` directory. We recommend completing the algorithms in the order they appear in the tests. 
+1. Complete the challenge in located in `part1/main.js` directory. We recommend completing the algorithms in the order they appear in the tests. 
 
-1. After completing part1, move on to ```part2/``` where you'll find Coin Sum and N-Paths. Complete these problems in whichever order you prefer.
+1. After completing part1, move on to `part2/` where you'll find Coin Sum and N-Paths. Complete these problems in whichever order you prefer.
 
 ##How do I test if my answer is correct?
 * To test your functions, open index.html in your browser.
 ** NOTE: While completing the challenges, if all tests that previously passed ALL suddenly fail, there is most likely a syntax error in your code. Open Chrome Dev Tool's to locate the cause of the error.
 
 
-
-#BONUS
-
-See the `extension-sudoku` directory for a bonus algorithm challenge: writing a Sudoku solver.

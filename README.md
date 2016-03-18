@@ -120,7 +120,8 @@ array.
 1. After completing part1, move on to `part2/` where you'll find Coin Sum and N-Paths. Complete these problems in whichever order you prefer.
 
 ##How do I test if my answer is correct?
-* To test your functions, open index.html in your browser.
-** NOTE: While completing the challenges, if all tests that previously passed ALL suddenly fail, there is most likely a syntax error in your code. Open Chrome Dev Tool's to locate the cause of the error.
+To test your functions, open `index.html` in your browser.
+
+**NOTE:** While completing the challenges, if all tests that previously passed ALL suddenly fail, there is most likely a syntax error in your code. Open Chrome Dev Tool's to locate the cause of the error.
 
 

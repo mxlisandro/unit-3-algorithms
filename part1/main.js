@@ -19,6 +19,10 @@ function isPrime(num) {
  * nthFibonacci(2); -> 1
  * nthFibonacci(3); -> 2
  * nthFibonacci(4); -> 3
+ * Try to use recursion. What is the time complexity? Are you repeating the same function call with the 
+ * same arguments a lot? Are you able to compute nthFibonacci(1000)? If not, recursive algorithms can be 
+ * made MUCH more efficient using memoization. Try memoizing each result from nthFibonacci and see the 
+ * performance difference.
 */
 function nthFibonacci(num) {
 
@@ -53,10 +57,13 @@ function rockPaperScissors(num) {
 }
 
 function insertionSort(array) {
+    
 }
 
 function bubbleSort(array) {
+    
 }
 
 function mergeSort(array) {
+    
 }

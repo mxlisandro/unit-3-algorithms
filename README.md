@@ -1,6 +1,6 @@
-#Algorithms
+# Algorithms
 
-##Summary
+## Summary
 ### Big-O Notation
 ![inline](https://nsscreencast.s3.amazonaws.com/072-objective-c-collections/bigonotation.jpg)
 <br>
@@ -90,7 +90,7 @@ arrays are merged so that there is a collection of two-element, sorted arrays. T
 in pairs and so on, until all the elements have been pieced back together into one fully sorted
 array.
 
-##How do I get started?
+## How do I get started?
 1. Have BOTH partners fork this repo
   - click on the **Fork** button on the top right of the page
 <br><img src="https://help.github.com/assets/images/help/repository/fork_button.jpg" width="300px"></img>  
@@ -119,9 +119,12 @@ array.
 
 1. After completing part1, move on to `part2/` where you'll find Coin Sum and N-Paths. Complete these problems in whichever order you prefer.
 
-##How do I test if my answer is correct?
+## How do I test if my answer is correct?
 To test your functions, open `index.html` in your browser.
 
 **NOTE:** While completing the challenges, if all tests that previously passed ALL suddenly fail, there is most likely a syntax error in your code. Open Chrome Dev Tool's to locate the cause of the error.
 
 
+## Extension
+
+Done already? If you've passed all the test cases for this unit, you can go back to [unit-2-data-structures](https://github.com/CodesmithLLC/unit-2-data-structures/) and work on some more of those. Done with unit-2? There are some advanced algorithm challenges in this bonus repo [super-extension-work](https://github.com/CodesmithLLC/super-extension-work).

@@ -127,4 +127,4 @@ To test your functions, open `index.html` in your browser.
 
 ## Extension
 
-Done already? If you've passed all the test cases for this unit, you can go back to [unit-2-data-structures](https://github.com/CodesmithLLC/unit-2-data-structures/) and work on some more of those. Done with unit-2? There are some advanced algorithm challenges in this bonus repo [super-extension-work](https://github.com/CodesmithLLC/super-extension-work).
+Done already? If you've passed all the test cases for this unit, you can go back to [unit-2-data-structures](https://github.com/CodesmithLLC/unit-2-data-structure/) and work on some more of those. Done with unit-2? There are some advanced algorithm challenges in this bonus repo [super-extension-work](https://github.com/CodesmithLLC/super-extension-work).

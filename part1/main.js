@@ -1,6 +1,8 @@
 /**
  *  returns true if string is a palindrome (the string is the same forward and backwards). The parameters entered may have puncutations and symbols, but they should not affect whether the string is a palindrome
- *  ex: palindrome("Anne, I vote more cars race Rome-to-Vienna"); -> true
+ *  palindrome("Anne, I vote more cars race Rome-to-Vienna"); -> true
+ *  palindrome("llama mall"); -> true
+ *  palindrome("jmoney"); -> false
  */
 function palindrome(string) {
 

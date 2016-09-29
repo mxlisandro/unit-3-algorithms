@@ -24,8 +24,6 @@ makeChange(1) === 1
 makeChange(2) === 2
 */
 
-function coinSum(){
+function coinSum() {
 
 }
-
-

@@ -8,7 +8,7 @@ describe('functionBind', () => {
   });
 
   it('should use the context it is bound to', () => {
-    const boundShout = functionBind(matt.shout, matt);
+    let boundShout = functionBind(matt.shout, matt);
     expect(boundShout()).to.be("matt");
     boundShout = functionBind(matt.shout, bob);
     expect(boundShout()).to.be("bob");

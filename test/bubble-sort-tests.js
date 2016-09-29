@@ -1,5 +1,5 @@
-describe('bubbleSort', function() {
-  it('should sort numbers', function() {
+describe('bubbleSort', () => {
+  it('should sort numbers', () => {
     for (var i = 0; i < 10; i++) {
       var smallArray = makeList(100);
       var clone = smallArray.slice();
@@ -7,13 +7,13 @@ describe('bubbleSort', function() {
     }
   });
 
-  it('should sort very large arrays', function() {
+  it('should sort very large arrays', () => {
     var largeArray = makeList(10000);
     var clone = largeArray.slice();
     expect(bubbleSort(clone)).to.eql(largeArray.sort(inc));
   });
 
-  xit('should handle a very, very large but already sorted arrays', function() {
+  xit('should handle a very, very large but already sorted arrays', () => {
     var ultraArray = [];
     for (var i = 0; i < 10000000; i++) {
       ultraArray.push(i);
@@ -27,11 +27,11 @@ describe('bubbleSort', function() {
 function makeList(num) {
   var arr = [];
   for (var i = 0; i < num; i++) {
-    arr.push(Math.ceil(Math.random()*num));
+    arr.push(Math.ceil(Math.random() * num));
   }
   return arr;
 }
 
 function inc(a,b) {
-  return a-b;
+  return a - b;
 }

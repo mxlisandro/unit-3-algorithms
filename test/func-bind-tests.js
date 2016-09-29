@@ -1,11 +1,13 @@
-describe('functionBind', function() {
-    var matt;
-    var bob;
-  beforeEach(function() {
+describe('functionBind', () => {
+  var matt;
+  var bob;
+
+  beforeEach(() => {
     matt = {name: "matt", shout: function() {return this.name;}};
     bob = {name: "bob"};
   });
-  it('should use the context it is bound to', function() {
+
+  it('should use the context it is bound to', () => {
     var boundShout = functionBind(matt.shout, matt);
     expect(boundShout()).to.be("matt");
     boundShout = functionBind(matt.shout, bob);

@@ -4,7 +4,7 @@
 ### Big-O Notation
 ![inline](https://nsscreencast.s3.amazonaws.com/072-objective-c-collections/bigonotation.jpg)
 <br>
-Big-O notation is used to used to compare the efficiency of algorithms and data structures. It
+Big-O notation is used to compare the efficiency of algorithms and data structures. It
 provides an upper bound on worst-case runtime and an approximation of how things scale.
 In general, we find these approximations by counting operations. 
 
@@ -48,7 +48,7 @@ Big-O is used to approximate how algorithms scale when input-size (array length,
 an object, string length, or whatever) grows towards infinity, so you
 can get rid of constant factors and additive terms with smaller orders of
 growth. We only want to keep the term that will
-dominate the function as input-size grows. For example, we say 5n + 2 is in O(n) because the
+dominate the function as input-size grows. For example, we say 5n + 2 is O(n) because the
 coefficient and constant become negligible when n is large.
 
 ### Recursion
@@ -123,7 +123,6 @@ array.
 To test your functions, open `index.html` in your browser.
 
 **NOTE:** While completing the challenges, if all tests that previously passed ALL suddenly fail, there is most likely a syntax error in your code. Open Chrome Dev Tool's to locate the cause of the error.
-
 
 ## Extension
 

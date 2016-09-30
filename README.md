@@ -9,7 +9,7 @@ provides an upper bound on worst-case runtime and an approximation of how things
 In general, we find these approximations by counting operations. 
 
 ##### Constant time operations (aka O(1), 1 unit of time)
-* declarations/assignments (`var num = 0`) 
+* declarations/assignments (`let num = 0`) 
 * comparisons (`num > 0`) 
 * object accesses (`arr[0]`)
 * simple mathematical operations (+, -, &amp;, /)
@@ -17,27 +17,27 @@ In general, we find these approximations by counting operations.
 ##### Examples
 * constant time O(1)
 ```javascript
-var num = 0;
+let num = 0;
 function increment() {
     num = num + 1;
 }
 ```
 * linear time O(n), where n is the length of the array
 ```javascript
-var arr = [0, 1, 2, 3];
+const arr = [0, 1, 2, 3];
 function increment(arr) {
-    for (var i = 0; i < arr.length; i++) {
+    for (let i = 0; i < arr.length; i++) {
         arr[i] = arr[i] + 1;
     }
 }
 ```
 * quadratic time O(n^2), where n is the length of the array
 ```javascript
-var arr = [0, 1, 2, 3];
+const arr = [0, 1, 2, 3];
 function sums(arr) {
-    var results = [];
-    for (var i = 0; i < arr.length; i++) {
-        for (var j = 0; j < arr.length; j++) {
+    const results = [];
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr.length; j++) {
             results.push(arr[i] + arr[j]);
         }
     }

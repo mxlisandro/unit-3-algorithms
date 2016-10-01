@@ -18,7 +18,7 @@ describe('bubbleSort', () => {
     for (let i = 0; i < 10000000; i++) {
       ultraArray.push(i);
     }
-    bubbleSort(arr);
+    bubbleSort(ultraArray);
     expect(arr[2000]).to.eql(2000);
   });
 

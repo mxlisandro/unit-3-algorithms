@@ -19,7 +19,7 @@ describe('bubbleSort', () => {
       ultraArray.push(i);
     }
     bubbleSort(ultraArray);
-    expect(arr[2000]).to.eql(2000);
+    expect(ultraArray[2000]).to.eql(2000);
   });
 
 });

@@ -41,9 +41,9 @@ function nthFibonacci(num) {
  *      alert(this.name);
  *  }
  * };
- * let boundShout = bind(matt.shout, matt); 
+ * let boundShout = functionBind(matt.shout, matt); 
  * boundShout(); -> alerts 'matt;
- * boundShout = bind(matt.shout, {name: 'kim'});
+ * boundShout = functionBind(matt.shout, {name: 'kim'});
  * boundShout(); -> alerts 'kim'
  */
 function functionBind(func, context) {

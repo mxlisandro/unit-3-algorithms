@@ -51,7 +51,7 @@ function functionBind(func, context) {
 }
 
 /**
- * returns every sequence of throws a single player could throw over a three-round game of rock-paper-scissors
+ * returns every sequence of throws a single player could throw over an n-round game of rock-paper-scissors
  * rockPaperScissors(1); -> [['rock'],['paper'],['scissors']]
  * rockPaperScissors(2); -> 
  * [['rock','rock'],['rock','paper'],['rock','scissors'],

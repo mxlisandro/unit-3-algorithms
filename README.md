@@ -96,7 +96,7 @@ array.
     <br><img src="https://help.github.com/assets/images/help/repository/fork_button.jpg" width="300px"></img>  
     - click on your handle to fork to your repo
 
-1. Choose one partner's GitHub repo to work from, and clone it to your shared machine
+2. Choose one partner's GitHub repo to work from, and clone it to your shared machine
     - first, make sure you're on your new forked repo on GitHub
     - copy and paste github url from the right side of the page
     <br><img src="https://help.github.com/assets/images/help/repository/clone-repo-clone-url-button.png" width="200px"></img>
@@ -104,20 +104,20 @@ array.
     ```
     git clone 'copied url'
     ```
-1. Add two remote links to the cloned repo on your shared workstation: one to CodesmithLLC's repo, and one to the partners repo that was not cloned:
+3. Add two remote links to the cloned repo on your shared workstation: one to CodesmithLLC's repo, and one to the partners repo that was not cloned:
     ```
     git remote add upstream https://github.com/CodesmithLLC/unit-3-algorithms.git
     ```
     ```
     git remote add partner https://github.com/PARTNERS_GITHUB_HANDLE/unit-3-algorithms.git
     ```
-1. Each partner clone their own repo to their own laptop, following the clone instructions in step 2
-1. Each partner add two remote links to their clone on their own laptop, one to CodesmithLLC's repo, and one to their partner's repo, following the instructions in step 3
-1. As you work on the shared workstation, periodically push your changes to your repo with `git push origin master`. Your partner can then use `git pull partner master` to get the changes onto their machine, followed by `git push origin master` to push those changes to their own GitHub repo!
+4. Each partner clone their own repo to their own laptop, following the clone instructions in step 2
+5. Each partner add two remote links to their clone on their own laptop, one to CodesmithLLC's repo, and one to their partner's repo, following the instructions in step 3
+6. As you work on the shared workstation, periodically push your changes to your repo with `git push origin master`. Your partner can then use `git pull partner master` to get the changes onto their machine, followed by `git push origin master` to push those changes to their own GitHub repo!
 
-1. Complete the challenge in located in `part1/main.js` directory. We recommend completing the algorithms in the order they appear in the tests. 
+7. Complete the challenge in located in `part1/main.js` directory. We recommend completing the algorithms in the order they appear in the tests. 
 
-1. After completing part1, move on to `part2/` where you'll find Coin Sum and N-Paths. Complete these problems in whichever order you prefer.
+8. After completing part1, move on to `part2/` where you'll find Coin Sum and N-Paths. Complete these problems in whichever order you prefer.
 
 ## How do I test if my answer is correct?
 To test your functions, open `index.html` in your browser.

@@ -2,7 +2,7 @@
 
 ## Summary
 ### Big-O Notation
-![inline](https://nsscreencast.s3.amazonaws.com/072-objective-c-collections/bigonotation.jpg)
+![inline](./docs/assets/images/bigonotation.jpg)
 <br>
 Big-O notation is used to compare the efficiency of algorithms and data structures. It
 provides an upper bound on worst-case runtime and an approximation of how things scale.
@@ -69,7 +69,7 @@ will use itself to break down the problem into smaller parts and piece together 
 
 ### Sorting Algorithms
 ##### Bubble Sort O(n^2)
-![inline](https://upload.wikimedia.org/wikipedia/commons/0/06/Bubble-sort.gif) <br>
+![inline](./docs/assets/images/bubble_sort.gif) <br>
 Bubble sort is terribly inefficient, but it has a cute name and is probably the most intuitive. It
 iterates through the array as many times as needed; it knows to stop once no more changes need to be
 made (aka the array is sorted). At each iteration, it swaps
@@ -77,12 +77,12 @@ neighboring elements if they are out of order, and essentially "bubbles" one (bi
 element to its correct position.
 
 ##### Insertion Sort O(n^2)
-![inline](https://upload.wikimedia.org/wikipedia/commons/9/9c/Insertion-sort-example.gif) <br>
+![inline](./docs/assets/images/insertion_sort.gif) <br>
 Like bubble sort, insertion sort also assembles a sorted array one element at a time. It takes the
 next item in the unsorted portion of the array and places it in its correct position in the sorted portion of the array.
 
 ##### Mergesort O(nlogn)
-![inline](https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif) <br>
+![inline](./docs/assets/images/merge_sort.gif) <br>
 Mergesort is a recursive divide-and-conquer algorithm. It recursively splits the array into two
 halves and merges them back together in sorted order. Since it is done recursively, the array is
 broken down until each element is in its own individual array. Then pairs of these one-element
@@ -93,13 +93,13 @@ array.
 ## How do I get started?
 1. Have BOTH partners fork this repo
     - click on the **Fork** button on the top right of the page
-    <br><img src="https://help.github.com/assets/images/help/repository/fork_button.jpg" width="300px"></img>  
+    <br><img src="./docs/assets/images/fork_button.jpg" width="300px"></img>  
     - click on your handle to fork to your repo
 
 2. Choose one partner's GitHub repo to work from, and clone it to your shared machine
     - first, make sure you're on your new forked repo on GitHub
     - copy and paste github url from the right side of the page
-    <br><img src="https://help.github.com/assets/images/help/repository/clone-repo-clone-url-button.png" width="200px"></img>
+    <br><img src="./docs/assets/images/clone-repo-clone-url-button.png" width="200px"></img>
     - enter the following line into your command line and insert your copied url instead of the quoted text:
     ```
     git clone 'copied url'

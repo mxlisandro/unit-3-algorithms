@@ -2,7 +2,7 @@
 
 ## Summary
 ### Big-O Notation
-![inline](./docs/assets/images/bigonotation.jpg)
+![inline](./docs/assets/images/bigonotation.jpeg)
 <br>
 Big-O notation is used to compare the efficiency of algorithms and data structures. It
 provides an upper bound on worst-case runtime and an approximation of how things scale.
@@ -93,7 +93,7 @@ array.
 ## How do I get started?
 1. Have BOTH partners fork this repo
     - click on the **Fork** button on the top right of the page
-    <br><img src="./docs/assets/images/fork_button.jpg" width="300px"></img>  
+    <br><img src="./docs/assets/images/fork_button.jpeg" width="300px"></img>  
     - click on your handle to fork to your repo
 
 2. Choose one partner's GitHub repo to work from, and clone it to your shared machine

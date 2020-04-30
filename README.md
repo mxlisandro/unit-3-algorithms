@@ -2,27 +2,27 @@
 
 ## Summary
 ### Big-O Notation
-![inline](https://nsscreencast.s3.amazonaws.com/072-objective-c-collections/bigonotation.jpg)
-<br>
-Big-O notation is used to compare the efficiency of algorithms and data structures. It
-provides an upper bound on worst-case runtime and an approximation of how things scale.
+![Big O Notation Graph](./docs/assets/images/bigonotation.jpeg)
+
+
+Big-O notation is used to compare the efficiency of algorithms and data structures. It provides an upper bound on worst-case runtime and an approximation of how things scale.
 In general, we find these approximations by counting operations. 
 
-##### Constant time operations (aka O(1), 1 unit of time)
-* declarations/assignments (`let num = 0`) 
-* comparisons (`num > 0`) 
-* object accesses (`arr[0]`)
-* simple mathematical operations (+, -, &amp;, /)
+#### Constant time operations (aka O(1), 1 unit of time)
+- declarations/assignments (`let num = 0`) 
+- comparisons (`num > 0`) 
+- object accesses (`arr[0]`)
+- simple mathematical operations (+, -, &amp;, /)
 
-##### Examples
-* constant time O(1)
+#### Examples
+__Constant time O(1)__
 ```javascript
 let num = 0;
 function increment() {
     num = num + 1;
 }
 ```
-* linear time O(n), where n is the length of the array
+__linear time O(n), where n is the length of the array__
 ```javascript
 const arr = [0, 1, 2, 3];
 function increment(arr) {
@@ -31,7 +31,7 @@ function increment(arr) {
     }
 }
 ```
-* quadratic time O(n^2), where n is the length of the array
+__quadratic time O(n^2), where n is the length of the array__
 ```javascript
 const arr = [0, 1, 2, 3];
 function sums(arr) {
@@ -69,7 +69,7 @@ will use itself to break down the problem into smaller parts and piece together 
 
 ### Sorting Algorithms
 ##### Bubble Sort O(n^2)
-![inline](https://upload.wikimedia.org/wikipedia/commons/0/06/Bubble-sort.gif) <br>
+![bubble_sort](./docs/assets/images/bubble_sort.gif) <br>
 Bubble sort is terribly inefficient, but it has a cute name and is probably the most intuitive. It
 iterates through the array as many times as needed; it knows to stop once no more changes need to be
 made (aka the array is sorted). At each iteration, it swaps
@@ -77,13 +77,13 @@ neighboring elements if they are out of order, and essentially "bubbles" one (bi
 element to its correct position.
 
 ##### Insertion Sort O(n^2)
-![inline](https://upload.wikimedia.org/wikipedia/commons/9/9c/Insertion-sort-example.gif) <br>
+![insertion_sort](./docs/assets/images/insertion_sort.gif) <br>
 Like bubble sort, insertion sort also assembles a sorted array one element at a time. It takes the
 next item in the unsorted portion of the array and places it in its correct position in the sorted portion of the array.
 
-##### Mergesort O(nlogn)
-![inline](https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif) <br>
-Mergesort is a recursive divide-and-conquer algorithm. It recursively splits the array into two
+##### Merge Sort O(nlogn)
+![merge_sort](./docs/assets/images/merge_sort.gif) <br>
+Merge sort is a recursive divide-and-conquer algorithm. It recursively splits the array into two
 halves and merges them back together in sorted order. Since it is done recursively, the array is
 broken down until each element is in its own individual array. Then pairs of these one-element
 arrays are merged so that there is a collection of two-element, sorted arrays. These are then merged
@@ -93,13 +93,13 @@ array.
 ## How do I get started?
 1. Have BOTH partners fork this repo
     - click on the **Fork** button on the top right of the page
-    <br><img src="https://help.github.com/assets/images/help/repository/fork_button.jpg" width="300px"></img>  
+    <br><img src="./docs/assets/images/fork_button.jpeg" width="300px"></img>  
     - click on your handle to fork to your repo
 
 2. Choose one partner's GitHub repo to work from, and clone it to your shared machine
     - first, make sure you're on your new forked repo on GitHub
     - copy and paste github url from the right side of the page
-    <br><img src="https://help.github.com/assets/images/help/repository/clone-repo-clone-url-button.png" width="200px"></img>
+    <br><img src="./docs/assets/images/clone-repo-clone-url-button.png" width="200px"></img>
     - enter the following line into your command line and insert your copied url instead of the quoted text:
     ```
     git clone 'copied url'

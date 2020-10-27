@@ -9,5 +9,8 @@
   "license": "ISC",
   "directories": {
     "test": "test"
+  },
+  "devDependencies": {
+    "eslint": "^7.12.0"
   }
 }

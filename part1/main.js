@@ -35,19 +35,30 @@ function nthFibonacci(num) {
 }
 
 /** returns a function with a context bound to this
- * const matt = {
+ * 
+ * const mattObj = {
  *  name: 'matt',
  *  shout: function() {
- *      alert(this.name);
+ *      console.log(this.name);
  *  }
  * };
- * let boundShout = functionBind(matt.shout, matt); 
- * boundShout(); -> alerts 'matt;
- * boundShout = functionBind(matt.shout, {name: 'kim'});
- * boundShout(); -> alerts 'kim'
+ * let boundShout = functionBind(mattObj.shout, mattObj); 
+ * boundShout(); -> prints 'matt;
+ * 
+ * const kimObj = {
+ *  name: 'kim',
+ *  shout: function() {
+ *      console.log(this.name);
+ *  }
+ * };
+ * boundShout = functionBind(mattObj.shout, kimObj);
+ * boundShout(); -> prints 'kim'
+ * 
+ * boundShout = functionBind(mattObj.shout, {name: 'bob'});
+ * boundShout(); -> prints 'bob'
  */
 function functionBind(func, context) {
-    
+
 }
 
 /**

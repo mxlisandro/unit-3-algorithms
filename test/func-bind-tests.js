@@ -1,16 +1,16 @@
 describe('functionBind', () => {
-  let matt;
-  let bob;
+  let mattObj;
+  let bobObj;
 
   beforeEach(() => {
-    matt = {name: "matt", shout: function() {return this.name;}};
-    bob = {name: "bob"};
+    mattObj = {name: "matt", shout: function() {return this.name;}};
+    bobObj = {name: "bob"};
   });
 
   it('should use the context it is bound to', () => {
-    let boundShout = functionBind(matt.shout, matt);
+    let boundShout = functionBind(mattObj.shout, mattObj);
     expect(boundShout()).to.be("matt");
-    boundShout = functionBind(matt.shout, bob);
+    boundShout = functionBind(mattObj.shout, bobObj);
     expect(boundShout()).to.be("bob");
   });
 

@@ -62,22 +62,39 @@ function isPrime(num, div = 3) {
 //base case 2: check if passed in num is 1, return 1
 //recursively call function passing in num-1, plus invocation of function passing in n-2
 function nthFibonacci(num) {
-    const cache = {};
-    return function test (num){
-        if (num === 0) return 0;
-        else if (num === 1) return 1;
-        else cache[num] = (test(num-1) + test(num-2));
-        return cache;
-    }
+    if (num === 0) return 0;
+    else if (num === 1) return 1;
+    else return nthFibonacci(num-1) + nthFibonacci(num-2);
 }
 
-console.log(nthFibonacci(0));
-console.log(nthFibonacci(1));
-console.log(nthFibonacci(2));
-console.log(nthFibonacci(3));
-console.log(nthFibonacci(4));
-console.log(nthFibonacci(10));
-console.log(nthFibonacci(4));
+
+function memoize(callback){
+//declare empty object
+  const cache = {};
+  //declare inner function which accepts one input called input
+  return function(input){
+      if(cache[input]){
+      //check if input is inside of object, if so, returns that inputs value
+      return cache[input];
+      }
+      else{
+      //otherwise, add input as key in object and assign it the evaluated result of performing callback on the input
+      cache[input] = callback(input);
+      //return the value
+      return cache[input];
+      }
+  }
+// //return inner function
+//     return inner;
+}
+
+const memoizedFib = memoize(nthFibonacci);
+// console.log(memoizedFib(10));
+// console.log(memoizedFib(16));
+// console.log(memoizedFib(45));
+// console.log(memoizedFib(16));
+// console.log(memoizedFib(45));
+
 
 /** returns a function with a context bound to this
  * 
@@ -106,6 +123,17 @@ function functionBind(func, context) {
 
 }
 
+const mattObj = {
+ name: 'matt',
+ shout: function() {
+     console.log(this.name);
+ }
+};
+
+// mattObj.shout();
+// let boundShout = functionBind(mattObj.shout, mattObj); 
+//boundShout(); // -> prints 'matt;
+
 /**
  * returns every sequence of throws a single player could throw over an n-round game of rock-paper-scissors
  * rockPaperScissors(1); -> [['rock'],['paper'],['scissors']]
@@ -113,9 +141,22 @@ function functionBind(func, context) {
  * [['rock','rock'],['rock','paper'],['rock','scissors'],
  * ['paper','paper'],['paper','scissors'],['paper','rock'],
  * ['scissors','scissors'],['scissors','paper'],['scissors','rock']]
+ * 
+ * 
+ * rockPapweScissors(3); -> [['rock,'rock','rock'], ['rock,'rock','paper'], ['rock,'rock','scissors'] ...]
+ * 
+ * 
  */
 function rockPaperScissors(num) {
-    
+    const output = [];
+    const smallArr = [];
+    let choices = 3 ** n;
+  // something to hold the strings: 'rock', 'paper', 'scissors'
+  ['rock', 'paper', 'scissors']
+  //base case1: if num = 1 return newArr.push([gameArray[i]])
+  // loop
+  //num=2 each of the RPS appears 6 times
+  //array size will match number of plays (num)
 }
 
 function insertionSort(array) {

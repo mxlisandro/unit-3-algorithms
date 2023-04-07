@@ -168,5 +168,5 @@ function bubbleSort(array) {
 }
 
 function mergeSort(array) {
-    
+    // 2nd test
 }

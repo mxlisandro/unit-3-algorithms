@@ -10,14 +10,10 @@
     //return false
 // return the invocation of palindrome passing in same string slicing off first and last character
 function palindrome(string) {
-<<<<<<< HEAD
- //this is a comment on palindrome
-=======
     string = string.toLowerCase().replaceAll(/\W/g,"")
     if(string.length === 0 || string.length ===1 ){return true}
     if(string[0] !== string[string.length-1]){return false}
     return palindrome(string.slice(1,-1))
->>>>>>> fda88d3469824d0cacf77868bf9f1579748074a0
 }
 
 // console.log(palindrome("Anne, I vote more cars race Rome-to-Vienna")); //-> true
@@ -31,10 +27,6 @@ function palindrome(string) {
  * isPrime(3); -> true
  * isPrime(4); -> false
  */
-<<<<<<< HEAD
-function isPrime(num) {
-//added new comment on isPrime
-=======
 function isPrime(num, div = 3) {
   // check if passed in num is 2, return true
   // check if num is less than 2 or divisible by 2 is strictly equal to 0, return false
@@ -47,7 +39,6 @@ function isPrime(num, div = 3) {
   if (num % div === 0) return false; 
 
   return isPrime(num, div + 2);
->>>>>>> fda88d3469824d0cacf77868bf9f1579748074a0
 }
 
 // console.log(isPrime(1)); //-> false
@@ -169,7 +160,7 @@ function rockPaperScissors(num) {
 }
 
 function insertionSort(array) {
-    
+    //can you see this?
 }
 
 function bubbleSort(array) {

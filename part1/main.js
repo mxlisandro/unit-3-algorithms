@@ -16,7 +16,7 @@ function palindrome(string) {
  * isPrime(4); -> false
  */
 function isPrime(num) {
-
+//added new comment on isPrime
 }
 
 /** returns the nth fibonacci number. A Fibonnaci sequence is a list of numbers that begin with 0 and 1, and each subsequent number is the sum of the previous two

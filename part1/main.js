@@ -5,7 +5,7 @@
  *  palindrome("jmoney"); -> false
  */
 function palindrome(string) {
-
+ //this is a comment on palindrome
 }
 
 /**

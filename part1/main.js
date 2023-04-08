@@ -120,15 +120,28 @@ const memoizedFib = memoize(nthFibonacci);
  * boundShout(); -> prints 'bob'
  */
 function functionBind(func, context) {
-
+    //add passed in function to passed in object (context)
+    context.bindedFunc = func;
+    //returns an anonymous function that will return out method  
+    return function () {
+        return context.bindedFunc();
+    };
 }
 
-const mattObj = {
- name: 'matt',
- shout: function() {
-     console.log(this.name);
- }
-};
+//  const mattObj = {
+//      name: 'matt',
+//      shout: function() {
+//          console.log(this.name);
+//      }
+//     };
+//     const kimObj = {
+//     name: 'kim',
+//      shout: function() {
+//         console.log(this.name);
+//      }
+//     };
+//      boundShout = functionBind(mattObj.shout, kimObj);
+//      boundShout(); 
 
 // mattObj.shout();
 // let boundShout = functionBind(mattObj.shout, mattObj); 
@@ -148,25 +161,74 @@ const mattObj = {
  * 
  */
 function rockPaperScissors(num) {
-    const output = [];
-    const smallArr = [];
-    let choices = 3 ** n;
+    // const output = [];
+    // const smallArr = [];
+    // let choices = 3 ** n;
   // something to hold the strings: 'rock', 'paper', 'scissors'
-  ['rock', 'paper', 'scissors']
   //base case1: if num = 1 return newArr.push([gameArray[i]])
   // loop
   //num=2 each of the RPS appears 6 times
-  //array size will match number of plays (num)
+//   //array size will match number of plays (num)
+//   var rockPaperScissors = function( numOfRounds ) {
+//     var options = ['rock', 'paper', 'scissors'];
+//     var allPossibilities = [];
+    
+//     var roundChoice = function(round, roundNumber) {
+//       for(var i = 0; i < options.length; i++){
+//         round.push(options[i]);
+//         if(roundNumber === numOfRounds){
+//           allPossibilities.push(round.slice());
+//         }else{
+//           roundChoice(round, roundNumber + 1);
+//         }
+//         round.pop();
+//        }
+//      }
+//     roundChoice([], 1);
+//     return allPossibilities;
+//    }
+// var rockPaperScissors = function(rounds) {
+//     rounds = rounds || 3;
+//     var outcomes = [];
+//     var plays = ['rock', 'paper', 'scissors'];
+//     var getOutcomes = function(playedSoFar, roundsLeft) {    
+//       if (roundsLeft === 0) {
+//         outcomes.push(playedSoFar);
+//       }
+//       else {
+//         for (var i = 0; i < plays.length; i++) {
+//           getOutcomes(playedSoFar.concat(plays[i]), roundsLeft-1);
+//         }
+//       }
+//     };
+//     getOutcomes([], rounds);
+//     return outcomes;
+//   };
+
+  if(num===0) return [];
+  function rps(num, path){
+    if(num===0){return outcomes.push(path);}
+    rps(num-1, path.concat('rock'));
+    rps(num-1, path.concat('paper'));
+    rps(num-1, path.concat('scissors'));
+  }
+  const outcomes =[];
+  rps(num, []);
+  return outcomes;
 }
 
 function insertionSort(array) {
-    //can you see this?
+//declare variable to hold current element
+//loop through array
+    // check if current element is greater than next
+        //swap next element with current
+
 }
 
 function bubbleSort(array) {
-    // new test
+
 }
 
 function mergeSort(array) {
-    // 2nd test
+    
 }
